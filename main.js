@@ -21,6 +21,9 @@ app.on('ready', ()=>{
         //height,
         //fullscreenable: true,
         //fullscreen: true,
+        webPreferences: {
+            nodeIntegration: true
+        },
         icon: path.resolve(__dirname, iconPath)        
     });
     // load HTML into window
